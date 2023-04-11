@@ -5,7 +5,7 @@
 #	echo $f;
 #	mv ${f}/* badminton_dataset_tw; 
 #done
-
+$save_dir = $1
 idx=00;
 for f in `cat action_labels.txt`;
 do 
@@ -13,6 +13,6 @@ do
 	echo $t $f;
 	((idx++));
 	mkdir ${t}_${f}; 
-	mv badminton_dataset_tw/*_${t}.mp4 ${t}_${f}/;
+	mv ${save_dir}/*_${t}.mp4 ${t}_${f}/;
 done
 

@@ -61,8 +61,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-#     import cv2
-
-# cap = cv2.VideoCapture("video.mp4")
-# length = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
